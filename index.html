@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City/Weather Search</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <!-- YOUR CODE HERE -->
-  
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City/Weather Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- YOUR CODE HERE -->
+    <div class="container">
+      <div class="search-field">
+        <input type="text" id="cityname" name="cityname" required />
+        <button class="btn-search">Search</button>
+      </div>
+
+      <div class="img-field">
+        <img src="images/day.jpg" class="sky-img" />
+        <div class="city-temp">
+          <h2 class="city-name">Vancouver</h2>
+          <h2 class="city-temp-info">18'c</h2>
+        </div>
+      </div>
+
+      <table class="weather-table">
+        <tbody>
+          <tr>
+            <th>Country</th>
+            <td class="country"></td>
+          </tr>
+          <tr>
+            <th>Timezone</th>
+            <td class="timezone"></td>
+          </tr>
+          <tr>
+            <th>Population</th>
+            <td class="population"></td>
+          </tr>
+          <tr>
+            <th>Tomorrow's Forecast</th>
+            <td class="tmr-forecast" rowspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
